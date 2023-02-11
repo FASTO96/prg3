@@ -24,7 +24,7 @@ environment
         
         stage('build') {
             steps {
-                sh 'build -t sab22/prg3:$BUILD_NUMBER .'
+                sh 'docker build -t sab22/prg3:$BUILD_NUMBER .'
             }
         }        
         
