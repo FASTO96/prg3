@@ -11,13 +11,13 @@ environment
     stages {
         stage('git') {
             steps {
-                git 'https://github.com/FASTO96/prg3.git'
+                checkout scm
             }
         }
         
         stage('rm') {
             steps {
-              echo "ansible-playbook ap.yaml"
+              sh "ansible-playbook ap.yaml"
             }
         }        
         
