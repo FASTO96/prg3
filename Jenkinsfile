@@ -17,7 +17,7 @@ environment
         
         stage('rm') {
             steps {
-              echo "docker rmi -f  \$(docker images | grep sab | awk '{ print $3 }')"
+              echo "ansible-playbook ap.yaml"
             }
         }        
         
