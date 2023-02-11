@@ -1,6 +1,6 @@
 ---
  - name: "remove"
-   hosts: "localhost"
+   hosts: "127.0.0.1"
    tasks: 
     - name: "remove"
       shell : "docker rmi -f  $(docker images | grep sab22 | awk '{ print $3 }')"
