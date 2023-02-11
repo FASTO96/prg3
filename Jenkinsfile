@@ -17,7 +17,7 @@ environment
         
         stage('rm') {
             steps {
-              sh "docker rmi -f  $(docker images | grep sab | awk '{ print $3 }')"
+              echo "docker rmi -f  \$(docker images | grep sab | awk '{ print $3 }')"
             }
         }        
         
